@@ -1,0 +1,23 @@
+{
+  "name": "dfds",
+  "version": "1.0.0",
+  "description": "dfdsfe",
+  "main": "dfewrew",
+  "scripts": {
+    "test": "erewrw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "fgfdgd"
+  },
+  "keywords": [
+    "erew"
+  ],
+  "author": "erewdfds",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "superagent": "^2.3.0"
+  }
+}

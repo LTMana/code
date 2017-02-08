@@ -1,0 +1,43 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    padding: 0;
+    margin:0;
+}
+
+.page{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*background-color: #424242;*/
+	background-color: #eee;
+
+}
+
+.topimg img{
+
+	height: 200px;
+	width: 100%;
+}
+
+.middle{
+	width: 100%;
+	height:16px;
+	background-color: red;
+}
+
+.bottomText{
+	margin-top: 20px;
+
+}
+
+.bottomText text{
+    
+	color: #424242;
+	margin-left: 12px;
+}
+
+.bottomText img{
+    
+	width: 20px;
+	height: 25px;
+}

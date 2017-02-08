@@ -1,0 +1,22 @@
+{
+  "name": "dfds",
+  "version": "1.0.0",
+  "description": "dfdsfs",
+  "main": "dwewqewq",
+  "scripts": {
+    "test": "wewqewq"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ewqewqeq"
+  },
+  "keywords": [
+    "ewewq"
+  ],
+  "author": "ewewqeere",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "utility": "^1.8.0"
+  }
+}
