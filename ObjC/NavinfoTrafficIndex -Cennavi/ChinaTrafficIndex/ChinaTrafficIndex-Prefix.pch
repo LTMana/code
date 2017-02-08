@@ -1,0 +1,48 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+
+#define DeepGreen   [UIColor colorWithRed:104.0/255 green:200.0/255 blue:19.0/255 alpha:1]
+#define lightGreen  [UIColor colorWithRed:61.0/255 green:206.0/255 blue:86.0/255 alpha:1]
+#define yellow      [UIColor colorWithRed:191.0/255 green:206.0/255 blue:61.0/255 alpha:1]
+#define Deepyellow  [UIColor colorWithRed:219.0/255 green:128.0/255 blue:38.0/255 alpha:1]
+#define lightRed    [UIColor colorWithRed:254.0/255 green:59.0/255 blue:48.0/255 alpha:1]
+#define DeepRed     [UIColor colorWithRed:148.0/255 green:12.0/255 blue:50.0/255 alpha:1]
+
+
+/*  指数曲线颜色  新版已经不用曲线图
+ 
+#define color1       [UIColor colorWithRed:255/255.0 green:140/255.0 blue:0 alpha:1.0]
+#define color2       [UIColor colorWithRed:99/255.0 green:184/255.0 blue:255/255.0 alpha:1.0]
+#define color3       [UIColor colorWithRed:191/255.0 green:62/255.0 blue:255/255.0 alpha:1.0]
+#define color4       [UIColor colorWithRed:0 green:238/255.0 blue:0 alpha:1.0]
+#define color5       [UIColor colorWithRed:30/255.0 green:144/255.0 blue:255/255.0 alpha:1.0]
+#define color6       [UIColor colorWithRed:238/255.0 green:106/255.0 blue:167/255.0 alpha:1.0]
+#define color7       [UIColor colorWithRed:208/255.0 green:32/255.0 blue:144/255.0 alpha:1.0]
+#define color8       [UIColor colorWithRed:205/255.0 green:55/255.0 blue:0 alpha:1.0]
+#define color9       [UIColor colorWithRed:255/255.0 green:165/255.0 blue:0 alpha:1.0]
+#define color10       [UIColor colorWithRed:141/255.0 green:238/255.0 blue:238/255.0 alpha:1.0]
+*/
+
+#define TrafficEyeURL @"http://mobile.trafficeye.com.cn:8000"
+
+#define TrafficIndexURL @"http://mobile.trafficeye.com.cn:9000/touChuanWebService/TouchuanService_v2"
+
+//#define TrafficIndexURL @"http://mobiletest.trafficeye.com.cn:18080/touChuanWebService/TouchuanService_v2"
+
+

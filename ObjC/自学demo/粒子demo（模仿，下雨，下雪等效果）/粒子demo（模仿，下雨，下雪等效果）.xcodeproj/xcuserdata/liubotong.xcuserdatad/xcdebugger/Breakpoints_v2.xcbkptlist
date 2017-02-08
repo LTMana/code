@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x7c92;&#x5b50;demo&#xff08;&#x6a21;&#x4eff;&#xff0c;&#x4e0b;&#x96e8;&#xff0c;&#x4e0b;&#x96ea;&#x7b49;&#x6548;&#x679c;&#xff09;/snow.m"
+            timestampString = "496041720.532995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x7c92;&#x5b50;demo&#xff08;&#x6a21;&#x4eff;&#xff0c;&#x4e0b;&#x96e8;&#xff0c;&#x4e0b;&#x96ea;&#x7b49;&#x6548;&#x679c;&#xff09;/CAEmitterLayerView.m"
+            timestampString = "496042092.529748"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x7c92;&#x5b50;demo&#xff08;&#x6a21;&#x4eff;&#xff0c;&#x4e0b;&#x96e8;&#xff0c;&#x4e0b;&#x96ea;&#x7b49;&#x6548;&#x679c;&#xff09;/CAEmitterLayerView.m"
+            timestampString = "496042183.94102"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-initWithFrame:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

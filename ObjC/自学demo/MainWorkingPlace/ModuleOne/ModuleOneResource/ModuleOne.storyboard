@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Part One View Controller-->
+        <scene sceneID="Lyw-Kv-Wq5">
+            <objects>
+                <viewController storyboardIdentifier="PartOneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kjd-UQ-NWZ" customClass="PartOneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gxd-p0-9KA"/>
+                        <viewControllerLayoutGuide type="bottom" id="V2c-6J-P5t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="INE-rl-e54">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qje-eE-dji">
+                                <rect key="frame" x="30" y="70" width="540" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.56872027008524961" blue="0.4269980332706953" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ew1-eL-cby"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPartTwoPage" destination="kjd-UQ-NWZ" eventType="touchUpInside" id="8Ae-Nj-0Uh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lsi-Cp-NRv">
+                                <rect key="frame" x="172" y="158" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cMb-nc-tWP"/>
+                                    <constraint firstAttribute="height" constant="128" id="yXU-oQ-tbE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qje-eE-dji" firstAttribute="leading" secondItem="INE-rl-e54" secondAttribute="leadingMargin" constant="10" id="Ezn-LE-HUv"/>
+                            <constraint firstItem="Lsi-Cp-NRv" firstAttribute="top" secondItem="qje-eE-dji" secondAttribute="bottom" constant="38" id="a9C-SD-XuR"/>
+                            <constraint firstItem="qje-eE-dji" firstAttribute="top" secondItem="gxd-p0-9KA" secondAttribute="bottom" constant="50" id="csx-lh-2zL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qje-eE-dji" secondAttribute="trailing" constant="10" id="jms-fD-OkB"/>
+                            <constraint firstItem="Lsi-Cp-NRv" firstAttribute="centerX" secondItem="INE-rl-e54" secondAttribute="centerX" id="mz7-tH-JDX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Lsi-Cp-NRv" id="ZQv-gb-iQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7r7-2r-mER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="544"/>
+        </scene>
+    </scenes>
+</document>

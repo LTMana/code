@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ChinaTrafficIndex.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>ExtensionToolClass.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>70F29ECD19CADD1400713CFB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD3783541A47B01100EDD6F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD37835E1A47B01100EDD6F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD8351F91A426C8200F7869A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD9A13B81A3ED0F7008CF5F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDC247C81A38400000F72522</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDD28B7F1A383DF200DC64F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

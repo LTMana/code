@@ -1,0 +1,11 @@
+
+platform :ios, '8.0'
+
+target "FFDBDemo" do
+pod 'Masonry'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod ‘FMDB’
+
+use_frameworks!
+end

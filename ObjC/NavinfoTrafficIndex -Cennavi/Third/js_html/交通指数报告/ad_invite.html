@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<title></title>
+		<link href="per_css/public.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="per_css/mdpi.css" />
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="per_css/hdpi.css" />
+		<script type="text/javascript" src="traffic_js/zepto.js"></script>
+		<script type="text/javascript">
+			window.addEventListener('load', function() {
+				var oInput = document.getElementById('emailInput');
+				var oBtn = document.getElementById('sendBtn');
+				var oSelect = document.getElementById('mz');
+				var regExp = /^[a-z1-9]+\w*@[a-z0-9]+\w*\.[a-z]+(\.[a-z]+)?$/i;
+				oBtn.addEventListener('touchstart', sendMsg, false);
+				var requestReport;
+				//oBtn.addEventListener('touchend',msgEnd,false);
+				function sendMsg() {
+					layerTips('Start');
+					//oBtn.className='curr';
+					var iSign = regExp.test(oInput.value);
+					if (iSign) {
+						if (oSelect.selectedIndex == 0) {
+							requestReport = '2014Q3';
+						} else if (oSelect.selectedIndex == 1) {
+							requestReport = '2014';
+						} else {
+							requestReport = '2015Q1';
+						}
+						var myUrl = 'http://www.nitrafficindex.com/traffic/sendMail.do?requestType=' + requestReport + '&to=' + oInput.value;
+						$.ajax({
+							url: myUrl,
+							type: 'get',
+							data: {
+								//to:oInput.value
+							},
+							dataType: "jsonp",
+							contentType: "application/x-www-form-urlencoded; charset=utf-8",
+							success: function(data) {
+								typeof data == 'string' && (data = JSON.parse(data));
+								layerTips(data.desc);
+							},
+							error: function(xmlHttp, error) {
+								layerTips('发生未知错误：' + error);
+							}
+						});
+					} else {
+						layerTips('请输入有效的邮箱');
+						oInput.value = '';
+					};
+				};
+				/*function msgEnd(){
+				 oBtn.className='';
+				 };*/
+				//				var oBack = document.getElementById('backpagebtn');
+				//				oBack.addEventListener('touchstart', backStart, false);
+				//				oBack.addEventListener('touchend', backEnd, false);
+				//
+				//				function backStart() {
+				//					oBack.children[0].style.backgroundPosition = 'center top';
+				//				};
+				//
+				//				function backEnd() {
+				//					oBack.children[0].style.backgroundPosition = 'center bottom';
+				//					if (navigator.userAgent.match(/android/i)) {
+				//						window.JSAndroidBridge.gotoPrePage();
+				//					} else if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/ipad/i)) {
+				//						window.location.href = ("objc:??gotoPrePage");
+				//					} else {
+				//						alert("调用本地goPersonal方法,PC不支持.");
+				//					};
+				//				};
+			});
+
+			function layerTips(tips) {
+				if (navigator.userAgent.match(/android/i)) {
+					alert(tips);
+				} else if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/ipad/i)) {
+					window.location.href = ("objc:??showAlert::?" + decodeURI(tips));
+				} else {
+					alert("调用本地showAlert方法,PC不支持.");
+				};
+			}; //提示框
+		</script>
+		<style type="text/css">
+			.emailTxt {
+				line-height: 1.2em;
+			}
+			.emailTxt h4 {
+				line-height: 14px;
+				line-heihgt: 14px;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p style="font-size:13px; margin-left:20px; margin-right:20px; margin-top:10px;"> 主要内容包括：重点城市拥堵分析、城市内拥堵区域、拥堵道路排名、交通关联因素分析等，通过不同的维度表达城市的拥堵状况，为出行做出参考。</p>
+		</div>
+
+		<div style="margin-left:20px; margin-top:10px; ">
+			报告时间:
+			<select name="iselect" id="mz" disable="true">
+				<option value="Q1">2014Q3</option>
+				<option value="Q2">2014全年</option>
+				<option value="Q3" selected="selected">2015Q1</option>
+			</select>
+		</div>
+		<label class="itext" for="emailInput">请输入邮箱地址，即可订阅：</label>
+		<ul class="register nccc" style="margin-top:10px;">
+			<li>
+				<h2>
+
+                <input id="emailInput" name="" type="text" placeholder="abc@abc.com" required />
+
+            </h2>
+			</li>
+		</ul>
+		<ul class="h-btn i-btn n-btn">
+			<li><a id="sendBtn">发送报告</a>
+			</li>
+		</ul>
+		<p class="itext" style="font-size:12px;">*访问 <a href="http://nitrafficindex.com/" style="display:inline;">http://nitrafficindex.com/</a> ，可查阅更多内容</p>
+	</body>
+
+</html>

@@ -1,0 +1,11 @@
+
+platform :ios, '8.0'
+
+target "RealmDemo" do
+pod 'Masonry'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod ‘Realm’
+
+use_frameworks!
+end

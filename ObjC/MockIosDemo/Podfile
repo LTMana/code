@@ -1,0 +1,8 @@
+
+platform :ios, '8.0'
+
+target "MockIosDemo" do
+pod 'OHHTTPStubs'
+pod 'AFNetworking'
+use_frameworks!
+end

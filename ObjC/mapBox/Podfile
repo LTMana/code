@@ -1,0 +1,4 @@
+platform :ios, '8.0'
+target 'mapBox' do
+  pod 'Mapbox-iOS-SDK', '~> 3.3.3'
+end

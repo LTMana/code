@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Module Two View Controller-->
+        <scene sceneID="29c-Jr-StZ">
+            <objects>
+                <viewController storyboardIdentifier="ModuleTwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SgX-Qn-7LD" customClass="ModuleTwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tx2-4z-w0G"/>
+                        <viewControllerLayoutGuide type="bottom" id="TmT-WT-v25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AQL-du-jnm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="12c-gP-gaO">
+                                <rect key="frame" x="97" y="80" width="211" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="Bft-J8-L4i"/>
+                                    <constraint firstAttribute="height" constant="193" id="MdJ-el-G60"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="12c-gP-gaO" firstAttribute="top" secondItem="Tx2-4z-w0G" secondAttribute="bottom" constant="60" id="ny0-zG-vmy"/>
+                            <constraint firstItem="12c-gP-gaO" firstAttribute="leading" secondItem="AQL-du-jnm" secondAttribute="leading" constant="97" id="wqW-Ks-OAe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psg-5J-AQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon.png" width="428" height="428"/>
+    </resources>
+</document>

@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - OHHTTPStubs (5.2.0):
+    - OHHTTPStubs/Default (= 5.2.0)
+  - OHHTTPStubs/Core (5.2.0)
+  - OHHTTPStubs/Default (5.2.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - OHHTTPStubs
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  OHHTTPStubs: 29ae105797c3410112d10b217c8b7a55aab616b2
+
+PODFILE CHECKSUM: c35fa5d0686d355c0ecb690959049517f651ad0e
+
+COCOAPODS: 1.0.1

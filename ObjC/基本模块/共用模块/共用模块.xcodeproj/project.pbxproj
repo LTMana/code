@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F170E2591DDED20E00220C65 /* 共用模块.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F170E24E1DDED20E00220C65 /* 共用模块.framework */; };
+		F170E25E1DDED20E00220C65 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F170E25D1DDED20E00220C65 /* ____Tests.m */; };
+		F170E26D1DDEDD2200220C65 /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = F170E26A1DDEDD2200220C65 /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F170E26E1DDEDD2200220C65 /* CommonPutLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = F170E26B1DDEDD2200220C65 /* CommonPutLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F170E26F1DDEDD2200220C65 /* CommonPutLogs.m in Sources */ = {isa = PBXBuildFile; fileRef = F170E26C1DDEDD2200220C65 /* CommonPutLogs.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F170E25A1DDED20E00220C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F170E2451DDED20E00220C65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F170E24D1DDED20E00220C65;
+			remoteInfo = "共用模块";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F170E24E1DDED20E00220C65 /* 共用模块.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "共用模块.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F170E2531DDED20E00220C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F170E2581DDED20E00220C65 /* 共用模块Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "共用模块Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F170E25D1DDED20E00220C65 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		F170E25F1DDED20E00220C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F170E26A1DDEDD2200220C65 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		F170E26B1DDEDD2200220C65 /* CommonPutLogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonPutLogs.h; sourceTree = "<group>"; };
+		F170E26C1DDEDD2200220C65 /* CommonPutLogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonPutLogs.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F170E24A1DDED20E00220C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F170E2551DDED20E00220C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F170E2591DDED20E00220C65 /* 共用模块.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F170E2441DDED20E00220C65 = {
+			isa = PBXGroup;
+			children = (
+				F170E2501DDED20E00220C65 /* 共用模块 */,
+				F170E25C1DDED20E00220C65 /* 共用模块Tests */,
+				F170E24F1DDED20E00220C65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F170E24F1DDED20E00220C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F170E24E1DDED20E00220C65 /* 共用模块.framework */,
+				F170E2581DDED20E00220C65 /* 共用模块Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F170E2501DDED20E00220C65 /* 共用模块 */ = {
+			isa = PBXGroup;
+			children = (
+				F170E26A1DDEDD2200220C65 /* CommonMacro.h */,
+				F170E26B1DDEDD2200220C65 /* CommonPutLogs.h */,
+				F170E26C1DDEDD2200220C65 /* CommonPutLogs.m */,
+				F170E2531DDED20E00220C65 /* Info.plist */,
+			);
+			path = "共用模块";
+			sourceTree = "<group>";
+		};
+		F170E25C1DDED20E00220C65 /* 共用模块Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F170E25D1DDED20E00220C65 /* ____Tests.m */,
+				F170E25F1DDED20E00220C65 /* Info.plist */,
+			);
+			path = "共用模块Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F170E24B1DDED20E00220C65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F170E26E1DDEDD2200220C65 /* CommonPutLogs.h in Headers */,
+				F170E26D1DDEDD2200220C65 /* CommonMacro.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F170E24D1DDED20E00220C65 /* 共用模块 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F170E2621DDED20E00220C65 /* Build configuration list for PBXNativeTarget "共用模块" */;
+			buildPhases = (
+				F170E2491DDED20E00220C65 /* Sources */,
+				F170E24A1DDED20E00220C65 /* Frameworks */,
+				F170E24B1DDED20E00220C65 /* Headers */,
+				F170E24C1DDED20E00220C65 /* Resources */,
+				F170E2691DDEDBA500220C65 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "共用模块";
+			productName = "共用模块";
+			productReference = F170E24E1DDED20E00220C65 /* 共用模块.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F170E2571DDED20E00220C65 /* 共用模块Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F170E2651DDED20E00220C65 /* Build configuration list for PBXNativeTarget "共用模块Tests" */;
+			buildPhases = (
+				F170E2541DDED20E00220C65 /* Sources */,
+				F170E2551DDED20E00220C65 /* Frameworks */,
+				F170E2561DDED20E00220C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F170E25B1DDED20E00220C65 /* PBXTargetDependency */,
+			);
+			name = "共用模块Tests";
+			productName = "共用模块Tests";
+			productReference = F170E2581DDED20E00220C65 /* 共用模块Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F170E2451DDED20E00220C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ltcom;
+				TargetAttributes = {
+					F170E24D1DDED20E00220C65 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F170E2571DDED20E00220C65 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F170E2481DDED20E00220C65 /* Build configuration list for PBXProject "共用模块" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F170E2441DDED20E00220C65;
+			productRefGroup = F170E24F1DDED20E00220C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F170E24D1DDED20E00220C65 /* 共用模块 */,
+				F170E2571DDED20E00220C65 /* 共用模块Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F170E24C1DDED20E00220C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F170E2561DDED20E00220C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F170E2691DDEDBA500220C65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=${PROJECT_NAME}\nINSTALL_DIR=${SRCROOT}/../../基本模块/baseFrameworks/${PROJECT_NAME}\n\nditto \"${BUILT_PRODUCTS_DIR}/${FMK_NAME}.framework\" \"${INSTALL_DIR}/${FMK_NAME}.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F170E2491DDED20E00220C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F170E26F1DDEDD2200220C65 /* CommonPutLogs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F170E2541DDED20E00220C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F170E25E1DDED20E00220C65 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F170E25B1DDED20E00220C65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F170E24D1DDED20E00220C65 /* 共用模块 */;
+			targetProxy = F170E25A1DDED20E00220C65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F170E2601DDED20E00220C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F170E2611DDED20E00220C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F170E2631DDED20E00220C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "共用模块/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F170E2641DDED20E00220C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "共用模块/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F170E2661DDED20E00220C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "共用模块Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F170E2671DDED20E00220C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "共用模块Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F170E2481DDED20E00220C65 /* Build configuration list for PBXProject "共用模块" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F170E2601DDED20E00220C65 /* Debug */,
+				F170E2611DDED20E00220C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F170E2621DDED20E00220C65 /* Build configuration list for PBXNativeTarget "共用模块" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F170E2631DDED20E00220C65 /* Debug */,
+				F170E2641DDED20E00220C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F170E2651DDED20E00220C65 /* Build configuration list for PBXNativeTarget "共用模块Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F170E2661DDED20E00220C65 /* Debug */,
+				F170E2671DDED20E00220C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F170E2451DDED20E00220C65 /* Project object */;
+}

@@ -1,0 +1,59 @@
+workspace 'MainWorkingPlace'
+
+
+project '../MainWorkingPlace/MainWorkingPlace.xcodeproj'
+project '../MainWorkingPlace/CommonModule/CommonModule.xcodeproj'
+project '../MainWorkingPlace/ModuleOne/ModuleOne.xcodeproj'
+
+
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+def pods
+    #定义导入的pods
+    platform :ios, '7.0'
+
+    pod 'GVUserDefaults'
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+end
+
+target 'MainWorkingPlace' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  project '../MainWorkingPlace/MainWorkingPlace.xcodeproj'
+  
+  pods
+  platform :ios, '7.0'
+  pod 'GVUserDefaults'
+
+
+end
+
+
+target 'CommonModule' do
+    # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+    # use_frameworks!
+    
+    project '../MainWorkingPlace/CommonModule/CommonModule.xcodeproj'
+    
+    pods
+    platform :ios, '7.0'
+    pod 'AFNetworking'
+    
+    
+end
+
+target 'ModuleOne' do
+    # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+    # use_frameworks!
+    
+    project '../MainWorkingPlace/ModuleOne/ModuleOne.xcodeproj'
+    
+    pods
+    platform :ios, '7.0'
+    pod 'SDWebImage'
+    
+    
+end
