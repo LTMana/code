@@ -1,0 +1,45 @@
+/**index.wxss**/
+.container{
+  background-color:#b3d4db;
+  width:100%;
+  height:100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 149rpx;
+  height: 149rpx;
+  margin-top: 160rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+  font-size: 32rpx;
+  margin-top: 100rpx;
+  font-weight: bold;
+}
+
+.motto {
+  border: 1px solid #405f80;
+  width: 250rpx;
+  height: 80rpx;
+  color: #405f80;
+  margin-top: 200rpx;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.motto-font{
+   color: #405f80;
+   margin-left: 25rpx;
+   line-height: 80rpx;
+}
+
+page {
+  display: block;
+  min-height: 100%;
+   background-color: #b3d4db;
+}

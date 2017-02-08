@@ -1,0 +1,25 @@
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.qq{
+    margin: 200rpx auto 0 auto;
+    height: 350rpx;
+    width: 350rpx;
+}
+
+.qrcode {
+    margin: 50rpx auto 0 auto;
+}
+
+.thanks{
+    margin: 200rpx auto 0 auto;
+    font-size: 32rpx;
+    color: #405f80;
+}
+
+.name{
+    color: #f21855;
+    font-weight: bold;
+}

@@ -1,0 +1,7 @@
+<view class="copyright">
+    <view class="copyright_item">CopyRight：All Right Reserved</view>
+    <view class="copyright_item">原创作者：TITF-FutureJet</view>
+    <view class="copyright_item">微信小程序学习平台公众号：TITF</view>
+    <view class="copyright_item"><image class="img" src="../copyright/image/TITF.jpg"/></view>
+    <view class="goto_counter"><button type="default" bindtap="goto_counter">点击进入图标拖动效果页面</button></view>
+</view>

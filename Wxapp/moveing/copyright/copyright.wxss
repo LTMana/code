@@ -1,0 +1,23 @@
+.copyright{
+    color: white;
+    padding: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-align: center;
+    background-color: darkblue;
+}
+.copyright_item{
+    margin-top: 5px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+    margin-top:30px;
+}
+.goto_counter{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

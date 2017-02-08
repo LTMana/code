@@ -1,0 +1,55 @@
+@import "movie/movie.template.wxss";
+.hot-container{
+    /*margin-left:30rpx;*/
+    background-color: #fff;
+    /*width: 100%;*/
+    display:flex;
+    flex-direction: column;
+}
+
+.inner-container{
+    margin: 0  auto 20rpx auto;
+}
+
+.head{
+    margin-top: 30rpx;
+    /*display:flex;*/
+    flex-direction:row;
+    margin-left: 0rpx;
+    margin-bottom: 28rpx;
+}
+
+.slogan{
+    font-size: 24rpx;
+}
+
+.more{
+    float:right;
+    margin-right:30rpx;
+}
+
+.more-text{
+    vertical-align: middle;
+    margin-right: 10rpx;
+    color: #1F4BA5;
+}
+
+.more-img{
+    width:9rpx;
+    height:16rpx;
+    vertical-align: middle;
+}
+
+.movie-list-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.movie-first{
+    margin-left:0rpx;
+}
+
+.movie-not-first{
+    margin-left:55rpx;
+}
+

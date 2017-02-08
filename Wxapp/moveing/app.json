@@ -1,0 +1,14 @@
+{
+    "pages": [
+      "copyright/copyright",
+      "index"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "TITF教程——鼠标拖动效果",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    }
+}

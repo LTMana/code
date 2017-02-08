@@ -1,0 +1,10 @@
+{
+
+
+  "pages": [
+     "pages/snake/snake",
+    "pages/index/index",
+    "pages/logs/logs"
+  ]
+}
+  

@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="/images/QQ.png" class="qq"></image>
+    <text class="qrcode">扫描二维码进群交流</text>
+    <text class="thanks">感谢团队美女设计师 @笑靥如花 的设计</text>
+    <button bindtap="bindViewTap">Content<button/>
+    <button bindtap="bindViewN">Content<button/>
+<view>

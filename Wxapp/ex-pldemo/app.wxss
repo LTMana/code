@@ -1,0 +1,19 @@
+/**app.wxss**/
+
+.font-shallow{
+    color:#999999;
+}
+
+body{
+    color:#999999;
+}
+
+text{
+    font-size:24rpx;
+    font-family:Microsoft YaHei;
+    color: #666;
+}
+
+input{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

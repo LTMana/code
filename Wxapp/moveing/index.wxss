@@ -1,0 +1,9 @@
+.view{
+    position: absolute;
+    height:120px;
+    width:120px;
+    background:green;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+}

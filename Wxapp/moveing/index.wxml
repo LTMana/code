@@ -1,0 +1,4 @@
+<view class="view"
+ style="left:{{left}}px;top:{{top}}px;"
+ bindtouchmove="viewTouchMove"
+ >使用鼠标拖动我</view>

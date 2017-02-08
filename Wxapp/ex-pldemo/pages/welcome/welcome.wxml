@@ -1,0 +1,8 @@
+
+<view class="container">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">Hello , {{userInfo.nickName}}</text>
+  <view class="motto" bindtap="bindViewTap">
+    <text class="motto-font">开启小程序之旅</text>
+  </view>
+</view>

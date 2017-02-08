@@ -1,0 +1,41 @@
+<!--
+HotCity城市选择器由HotApp小程序统计团队开发并开源：https://github.com/hotapp888/hotcity
+城市完整SQL下载地址和API接口文档说明：http://wenda.hotapp.cn/article/3
+小程序交流学习QQ群173063969
+-->
+<!-- city.wxml -->
+<template name="area">
+    <view class='area-section-wrap'>
+        <view class='area-section-group'>
+            <view class='area_label'>省：</view>
+            <view class='area_input' id='province'   bindtap='showArea'>
+                {{areaData.province.name}}
+                <image class="area_arrow" src="../../images/1_7.png" ></image>
+            </view>
+        </view>
+        <view class='area-section-group'>
+            <view class='area_label'>市：</view>
+            <view class='area_input' id='city' bindtap='showArea'>
+                {{areaData.city.name}}
+                <image class="area_arrow" src="../../images/1_7.png" ></image>
+            </view>
+        </view>
+        <view class='area-section-group' wx:if="{{areaData.districtShow}}">
+            <view class='area_label'>区/县：</view>
+            <view class='area_input' id='district' bindtap='showArea'>
+                {{areaData.district.name}}
+                <image class="area_arrow" src="../../images/1_7.png" ></image>
+            </view>
+        </view>
+    </view>
+    <block wx:if='{{areaData.areaListShow}}'>
+        <scroll-view scroll-y="true" class="area-section-list">
+            <block wx:for="{{areaData.areaList}}">
+                <view data-name='{{item.name}}' data-level='{{item.level}}' data-adcode='{{item.adcode}}'  data-parent_adcode='{{item.parent_adcode}}' class='area_name' bindtap='selectArea'>
+                    {{item.name}}
+                </view>
+            </block>
+        </scroll-view>
+        <view class="close-area-list" bindtap='hideArea'><image src="../area/images/close_area_list.png" style="width:36rpx;height:36rpx;"></image></view>
+    </block>
+</template>

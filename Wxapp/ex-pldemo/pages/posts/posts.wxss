@@ -1,0 +1,34 @@
+@import "post-item/post-item.wxss";
+
+.swiper-item{
+    width:100%;
+    height: 600rpx;
+}
+
+.swiper{
+    width:100%;
+    height:600rpx;
+}
+
+.item-image{
+    width:100%;
+    height:600rpx;
+}
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #F8F8F8;
+}
+
+.container{
+  display: block;
+  /*width:100%;*/
+  flex-direction: column;
+  margin:0;
+  box-sizing: border-box;
+  color:#b3b3b3;
+  font-size:14px;
+  font-family:Microsoft YaHei
+}
+

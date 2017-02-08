@@ -1,0 +1,32 @@
+<import src="movie-list/movie-list.template.wxml" />
+<import src="movie-grid/movie-grid.template.wxml" />
+<view class="search">
+    <!--<image class="search-img" src="/images/icon/search.png"></image>-->
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input class="search-input" type="text" placeholder="釜山行、夏有乔木仰望天堂" placeholder-class="font" 
+    bindchange = "onBindChange" bindfocus="onBindFocus"/>
+    <image class="xx-img" src="/images/icon/xx.png" wx-if="{{searchPannelShow}}" bindtap="onCancleImgTap"></image>
+</view>
+<view class="container" wx-if="{{containerShow}}">
+    <view class="body">
+        <view class="movies-template">
+            <template is="movieListTemplate" data="{{...inTheaters}}"/>
+        </view>
+         <view class="movies-template">
+            <template is="movieListTemplate" data="{{...comingSoon}}"/>
+        </view>
+        <view class="movies-template">
+            <template is="movieListTemplate" data="{{...top250}}"/>
+        </view>
+    </view>
+</view>
+<view class="search-pannel" wx-if="{{searchPannelShow}}">
+    <template is="movieGridTemplate" data="{{movies:searchResult.movies}}"/>
+    <!--<view class="search-result-container">
+        <block wx:for="{{searchResult.movies}}" wx:for-item="movie">
+        <view class="search-movie-container">
+            <template is="movieTemplate" data="{{...movie}}" />
+            </view>
+        </block>
+    </view>-->
+</view>

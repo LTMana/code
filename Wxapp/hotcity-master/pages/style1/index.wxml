@@ -1,0 +1,20 @@
+<!--
+HotCity城市选择器由HotApp小程序统计团队开发并开源：https://github.com/hotapp888/hotcity
+城市完整SQL下载地址和API接口文档说明：http://wenda.hotapp.cn/article/3
+小程序交流学习QQ群173063969
+-->
+<!--index.wxml-->
+<import src="../district/district.wxml"/>
+<template is="district" data="{{districts}}" />
+
+<view class="get-provinces" bindtap="getProvinces">点击选择行政区</view>
+<view class='district-info'>
+    <view class='district-info-left'>
+        <view>{{districts.selectedProvince ? "您选择的是：" : "您还未选择："}}</view>
+    </view>
+    <view  class='district-info-right'>
+        <view class='district-info-detail {{districts.selectedProvince ? "active" : ""}}'>{{ districts.selectedProvince }}</view>
+        <view class='district-info-detail {{districts.selectedCity ? "active" : ""}} '>{{ districts.selectedCity }}</view>
+        <view class='district-info-detail {{districts.selectedDistrict ? "active" : ""}}'>{{ districts.selectedDistrict }}</view>
+    </view>
+</view>

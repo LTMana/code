@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/style1/index",
+    "pages/style2/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fc8e5d",
+    "navigationBarTitleText": "HotCity 城市选择器",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#b3b3b3",
+    "selectedColor": "#fc8e5d",
+    "backgroundColor": "#f5f5f7",
+    "borderStyle" : "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "城市选择",
+      "iconPath": "images/1_4.png",
+      "selectedIconPath": "images/1_5.png"
+    }, {
+      "pagePath": "pages/index/index",
+      "text": "占位图标",
+      "iconPath": "images/1_2.png",
+      "selectedIconPath": "images/1_3.png"
+    }]
+  }
+}
