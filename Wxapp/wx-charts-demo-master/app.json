@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/charts/column/column",
+    "pages/charts/ring/ring",
+    "pages/charts/pie/pie",
+    "pages/charts/line/line",
+    "pages/charts/area/area"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wxCharts Demo",
+    "navigationBarTextStyle":"black"
+  }
+}
