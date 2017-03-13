@@ -78,5 +78,17 @@ print("The status code is \(statusCode)")
 print("The status message is \(Message)")
 // 输出 "The status message is Not Found"
 
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+
+print("The status code is \(http404Error.0)")
+// 输出 "The status code is 404"
+print("The status message is \(http404Error.1)")
 
 
+
+//可选类型
+var possibleNumber:Int? = nil
+possibleNumber = 4
+//let convertedNumber = Int(possibleNumber)
+print(possibleNumber!)
