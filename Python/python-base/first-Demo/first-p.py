@@ -36,7 +36,6 @@ print(area_ddd(1,2,3))
 print(area_ddd(height=3,base_up=1,base_down=2))
 
 
-
 def s(a,b):
     sum = a+b
     return sum
