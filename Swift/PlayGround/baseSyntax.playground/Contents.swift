@@ -72,7 +72,6 @@ if i == 1 {
 let http404Error = (404,"Not Found")
 
 let (statusCode,Message) = http404Error
-
 print("The status code is \(statusCode)")
 // 输出 "The status code is 404"
 print("The status message is \(Message)")
@@ -85,10 +84,50 @@ print("The status code is \(http404Error.0)")
 // 输出 "The status code is 404"
 print("The status message is \(http404Error.1)")
 
-
-
 //可选类型
 var possibleNumber:Int? = nil
 possibleNumber = 4
 //let convertedNumber = Int(possibleNumber)
 print(possibleNumber!)
+
+
+//可选类型绑定
+var wed:String? = "ddddd"
+
+if let wed = wed{
+   wed
+}
+var fddss=Int("3432")
+print(fddss!)
+fddss = nil
+
+if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
+    print("\(firstNumber) < \(secondNumber) < 100")
+}
+
+//隐式可选类型
+let possibleString: String? = "An optional string."
+print(possibleString) // 需要惊叹号来获取值
+
+var assumedString: String! = nil
+assumedString = "dddddsss"
+print(assumedString)
+
+
+
+func canThrowAnError() throws {
+    // 这个函数有可能抛出错误
+  
+}
+do {
+    try canThrowAnError()
+    // 没有错误消息抛出
+} catch {
+    // 有一个错误消息抛出
+}
+
+
+var age = 2222
+
+age = -4
+assert(age>=0, "年龄不能小于0")
