@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+a	../first-p.py	/^a='dfdsdf'$/;"	kind:variable	line:1
+area_ddd	../first-p.py	/^def area_ddd(base_up,base_down,height=5):$/;"	kind:function	line:31
+b	../first-p.py	/^b="你好吗" * 3$/;"	kind:variable	line:2
+c	../first-p.py	/^c='etrte'$/;"	kind:variable	line:3
+d	../first-p.py	/^d=a+b+c$/;"	kind:variable	line:5
+find	../first-p.py	/^find = word[0] + word[2:4] + word[-3:-1]$/;"	kind:variable	line:18
+first-p.py	../first-p.py	1;"	kind:file	line:1
+hide_phone	../first-p.py	/^hide_phone=phone.replace(phone[:-4],'*' * 9)$/;"	kind:variable	line:23
+phone	../first-p.py	/^phone = '1360-248-4753'$/;"	kind:variable	line:21
+s	../first-p.py	/^def s(a,b):$/;"	kind:function	line:39
+word	../first-p.py	/^word = 'friends'$/;"	kind:variable	line:16
