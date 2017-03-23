@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOWED_HOSTS	../fristsite/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../fristsite/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:88
+AppConfig	../fristapp/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+BASE_DIR	../fristsite/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+DATABASES	../fristsite/settings.py	/^DATABASES = {$/;"	kind:variable	line:77
+DEBUG	../fristsite/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+FristappConfig	../fristapp/apps.py	/^class FristappConfig(AppConfig):$/;"	kind:class	line:4
+INSTALLED_APPS	../fristsite/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../fristsite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:107
+MIDDLEWARE	../fristsite/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:43
+People	../fristapp/models.py	/^class People(models.Model):$/;"	kind:class	line:6
+ROOT_URLCONF	../fristsite/settings.py	/^ROOT_URLCONF = 'fristsite.urls'$/;"	kind:variable	line:53
+STATIC_URL	../fristsite/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:121
+TEMPLATES	../fristsite/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:55
+TIME_ZONE	../fristsite/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:109
+TestCase	../fristapp/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+USE_I18N	../fristsite/settings.py	/^USE_I18N = True$/;"	kind:variable	line:111
+USE_L10N	../fristsite/settings.py	/^USE_L10N = True$/;"	kind:variable	line:113
+USE_TZ	../fristsite/settings.py	/^USE_TZ = True$/;"	kind:variable	line:115
+WSGI_APPLICATION	../fristsite/settings.py	/^WSGI_APPLICATION = 'fristsite.wsgi.application'$/;"	kind:variable	line:71
+__init__.py	../fristapp/__init__.py	1;"	kind:file	line:1
+__init__.py	../fristapp/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../fristsite/__init__.py	1;"	kind:file	line:1
+admin	../fristapp/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../fristsite/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin.py	../fristapp/admin.py	1;"	kind:file	line:1
+application	../fristsite/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../fristapp/apps.py	1;"	kind:file	line:1
+django	../manage.py	/^            import django$/;"	kind:namespace	line:14
+execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+get_wsgi_application	../fristsite/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+job	../fristapp/models.py	/^    job = models.CharField(blank=True, null=True, max_length=200)$/;"	kind:variable	line:8
+manage.py	../manage.py	1;"	kind:file	line:1
+models	../fristapp/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models.py	../fristapp/models.py	1;"	kind:file	line:1
+name	../fristapp/apps.py	/^    name = 'fristapp'$/;"	kind:variable	line:5
+name	../fristapp/models.py	/^    name = models.CharField(blank=True, null=True, max_length=200)$/;"	kind:variable	line:7
+os	../fristsite/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../fristsite/wsgi.py	/^import os$/;"	kind:namespace	line:10
+os	../manage.py	/^import os$/;"	kind:namespace	line:2
+render	../fristapp/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+settings.py	../fristsite/settings.py	1;"	kind:file	line:1
+sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
+tests.py	../fristapp/tests.py	1;"	kind:file	line:1
+url	../fristsite/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:16
+urlpatterns	../fristsite/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	../fristsite/urls.py	1;"	kind:file	line:1
+views.py	../fristapp/views.py	1;"	kind:file	line:1
+wsgi.py	../fristsite/wsgi.py	1;"	kind:file	line:1
