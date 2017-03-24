@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from fristapp.views import first_try, index
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^first_try/', first_try),
+    url(r'^index', index, name='index')
 ]

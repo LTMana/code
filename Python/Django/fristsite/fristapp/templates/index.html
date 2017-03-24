@@ -1,0 +1,249 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html lang="en">
+
+
+
+<head>
+    <title>Apple(中国)-非官方网站</title>
+    <meta charset="UTF-8">
+
+    <link href="{%  static 'css/semantic.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!--MEUE-->
+    <div class="ui fixed fitted borderless inverted fluid nine item menu">
+
+        <a href="#" class="item">
+            <div class="ui image">
+                <img src="{% static 'images/appleicon.png' %}" alt="" />
+            </div>
+
+        </a>
+
+        <a href="#" class="item">Mac</a>
+        <a href="#" class="item">iPad</a>
+        <a href="#" class="item">iPhone</a>
+        <a href="#" class="item">watch</a>
+        <a href="#" class="item">Music</a>
+        <a href="#" class="item">技术支持</a>
+        <a href="#" class="item">
+            <div class="ui image">
+                <img src="{% static 'images/searchicon.png' %}" alt="" />
+            </div>
+
+        </a>
+
+        <a href="#" class="item">
+            <div class="ui image">
+                <img src="{% static 'images/buyicon.png' %}" alt="" />
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+    <!--IMAGE-->
+    <div class="ui secondary vertical basic segment">
+
+        <div class="ui banner image">
+            <img src="{% static 'images/banner.png' %}" alt="">
+        </div>
+
+    </div>
+    <!--Item-->
+    <div class="ui secondary vertical basic segment">
+
+        <div class="ui segment">
+
+
+            {% for article in article_list %}
+            <div class="ui container vertical segment">
+                <a>
+                    <h1 class="ui header">{{article.headline}}</h1>
+                </a>
+                <p>
+                    {{article.content|truncatewords:100}}
+                </p>
+            </div>
+
+            {% endfor %}
+
+            <!--<div class="item">
+                <img class="ui image" src="{% static 'images/img1.png' %}" alt="" />
+            </div>
+
+            <div class="item">
+                <img class="ui image" src="{% static 'images/img2.png' %}" alt="" />
+            </div>
+
+            <div class="item">
+                <img class="ui image" src="{% static 'images/img3.png' %}" alt="" />
+            </div>
+
+            <div class="item">
+                <img class="ui image" src="{% static 'images/img4.png' %}" alt="" />
+            </div>-->
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="ui vertical secondary very padded segment">
+        <div class="ui container">
+
+            <div class="sub header">
+                双镜头摄像头仅于 iPhone 7 Plus 提供。亮黑色外观仅于 128GB 及以上存储容量的机型提供。
+            </div>
+
+            <div class="ui divider"></div>
+
+            <div class="ui five column grid">
+
+                <div class="column">
+                    <div class="ui vertical text menu">
+                        <div class="item">
+                            <h4>Apple Store 商店</h4>
+                        </div>
+                        <a class="item">
+                                查找零售店
+                         </a>
+                        <a class="item">
+                                iPad
+                        </a>
+                        <a class="item">
+                                iPhone
+                         </a>
+                        <a class="item">
+                                Watch
+                         </a>
+                        <a class="item">
+                                iPod
+                          </a>
+
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui vertical text menu">
+                        <div class="item">
+                            <h4>Apple Store 商店</h4>
+                        </div>
+                        <a class="item">
+                                查找零售店
+                         </a>
+                        <a class="item">
+                                iPad
+                        </a>
+                        <a class="item">
+                                iPhone
+                         </a>
+                        <a class="item">
+                                Watch
+                         </a>
+                        <a class="item">
+                                iPod
+                          </a>
+
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui vertical text menu">
+                        <div class="item">
+                            <h4>Apple Store 商店</h4>
+                        </div>
+                        <a class="item">
+                                查找零售店
+                         </a>
+                        <a class="item">
+                                iPad
+                        </a>
+                        <a class="item">
+                                iPhone
+                         </a>
+                        <a class="item">
+                                Watch
+                         </a>
+                        <a class="item">
+                                iPod
+                          </a>
+
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui vertical text menu">
+                        <div class="item">
+                            <h4>Apple Store 商店</h4>
+                        </div>
+                        <a class="item">
+                                查找零售店
+                         </a>
+                        <a class="item">
+                                iPad
+                        </a>
+                        <a class="item">
+                                iPhone
+                         </a>
+                        <a class="item">
+                                Watch
+                         </a>
+                        <a class="item">
+                                iPod
+                          </a>
+
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui vertical text menu">
+                        <div class="item">
+                            <h4>Apple Store 商店</h4>
+                        </div>
+                        <a class="item">
+                                查找零售店
+                         </a>
+                        <a class="item">
+                                iPad
+                        </a>
+                        <a class="item">
+                                iPhone
+                         </a>
+                        <a class="item">
+                                Watch
+                         </a>
+                        <a class="item">
+                                iPod
+                          </a>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
