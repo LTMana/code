@@ -36,8 +36,15 @@ def first_try(request):
 
 
 def index(request):
+    queruset = request.GET.get('tag')
+    if queruset:
+        article_list = Aritcle.objects.filter(tag=queruset)
+    else:
+        article_list = Aritcle.objects.all()
+
+    print(queruset)
     Context = {}
-    article_list = Aritcle.objects.all()
+
     Context['article_list'] = article_list
     index_page = render(request, 'firstweb.html', Context)
     return index_page

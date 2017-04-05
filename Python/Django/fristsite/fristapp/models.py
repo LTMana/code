@@ -14,5 +14,12 @@ class People(models.Model):
 class Aritcle(models.Model):
     headline = models.CharField(blank=True, null=True, max_length=500)
     content = models.TextField(blank=True, null=True)
+    TAG_CHOICES = (
+        ('tech', 'Tech'),
+        ('life', 'Life'),
+    )
+    tag = models.CharField(blank=True, null=True,
+                           max_length=5, choices=TAG_CHOICES)
+
     def __str__(self):
         return self.headline
