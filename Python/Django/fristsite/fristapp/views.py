@@ -39,5 +39,5 @@ def index(request):
     Context = {}
     article_list = Aritcle.objects.all()
     Context['article_list'] = article_list
-    index_page = render(request, 'index.html', Context)
+    index_page = render(request, 'firstweb.html', Context)
     return index_page
