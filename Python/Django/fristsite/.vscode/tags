@@ -4,21 +4,36 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../fristapp/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_aritcle.py	../fristapp/migrations/0002_aritcle.py	1;"	kind:file	line:1
+0003_aritcle_tag.py	../fristapp/migrations/0003_aritcle_tag.py	1;"	kind:file	line:1
 ALLOWED_HOSTS	../fristsite/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
 AUTH_PASSWORD_VALIDATORS	../fristsite/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:88
 AppConfig	../fristapp/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+Aritcle	../fristapp/admin.py	/^from fristapp.models import People,Aritcle$/;"	kind:namespace	line:2
+Aritcle	../fristapp/models.py	/^class Aritcle(models.Model):$/;"	kind:class	line:14
+Aritcle	../fristapp/views.py	/^from fristapp.models import People, Aritcle$/;"	kind:namespace	line:2
 BASE_DIR	../fristsite/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+Context	../fristapp/views.py	/^from django.template import Context, Template$/;"	kind:namespace	line:4
 DATABASES	../fristsite/settings.py	/^DATABASES = {$/;"	kind:variable	line:77
 DEBUG	../fristsite/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
 FristappConfig	../fristapp/apps.py	/^class FristappConfig(AppConfig):$/;"	kind:class	line:4
+HttpResponse	../fristapp/views.py	/^from django.http import HttpResponse$/;"	kind:namespace	line:3
 INSTALLED_APPS	../fristsite/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
 LANGUAGE_CODE	../fristsite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:107
 MIDDLEWARE	../fristsite/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:43
+Migration	../fristapp/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../fristapp/migrations/0002_aritcle.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../fristapp/migrations/0003_aritcle_tag.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+People	../fristapp/admin.py	/^from fristapp.models import People,Aritcle$/;"	kind:namespace	line:2
 People	../fristapp/models.py	/^class People(models.Model):$/;"	kind:class	line:6
+People	../fristapp/views.py	/^from fristapp.models import People, Aritcle$/;"	kind:namespace	line:2
 ROOT_URLCONF	../fristsite/settings.py	/^ROOT_URLCONF = 'fristsite.urls'$/;"	kind:variable	line:53
 STATIC_URL	../fristsite/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:121
+TAG_CHOICES	../fristapp/models.py	/^    TAG_CHOICES = ($/;"	kind:variable	line:17
 TEMPLATES	../fristsite/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:55
 TIME_ZONE	../fristsite/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:109
+Template	../fristapp/views.py	/^from django.template import Context, Template$/;"	kind:namespace	line:4
 TestCase	../fristapp/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 USE_I18N	../fristsite/settings.py	/^USE_I18N = True$/;"	kind:variable	line:111
 USE_L10N	../fristsite/settings.py	/^USE_L10N = True$/;"	kind:variable	line:113
@@ -27,29 +42,64 @@ WSGI_APPLICATION	../fristsite/settings.py	/^WSGI_APPLICATION = 'fristsite.wsgi.a
 __init__.py	../fristapp/__init__.py	1;"	kind:file	line:1
 __init__.py	../fristapp/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../fristsite/__init__.py	1;"	kind:file	line:1
+__str__	../fristapp/models.py	/^    def __str__(self):$/;"	kind:member	line:10
+__str__	../fristapp/models.py	/^    def __str__(self):$/;"	kind:member	line:24
 admin	../fristapp/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	../fristsite/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
 admin.py	../fristapp/admin.py	1;"	kind:file	line:1
 application	../fristsite/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
 apps.py	../fristapp/apps.py	1;"	kind:file	line:1
+c	../fristapp/views.py	/^    c = Context({'person': person})$/;"	kind:variable	line:32
+content	../fristapp/models.py	/^    content = models.TextField(blank=True, null=True)$/;"	kind:variable	line:16
+dependencies	../fristapp/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../fristapp/migrations/0002_aritcle.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../fristapp/migrations/0003_aritcle_tag.py	/^    dependencies = [$/;"	kind:variable	line:10
 django	../manage.py	/^            import django$/;"	kind:namespace	line:14
 execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+field	../fristapp/migrations/0003_aritcle_tag.py	/^            field=models.CharField(blank=True, choices=[('tech', 'Tech'), ('life', 'Life')], max_length=5, null=True),$/;"	kind:variable	line:18
+fields	../fristapp/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
+fields	../fristapp/migrations/0002_aritcle.py	/^            fields=[$/;"	kind:variable	line:17
+first_try	../fristapp/views.py	/^def first_try(request):$/;"	kind:function	line:8
+first_try	../fristsite/urls.py	/^from fristapp.views import first_try, index$/;"	kind:namespace	line:18
 get_wsgi_application	../fristsite/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+headline	../fristapp/models.py	/^    headline = models.CharField(blank=True, null=True, max_length=500)$/;"	kind:variable	line:15
+index	../fristapp/views.py	/^def index(request):$/;"	kind:function	line:38
+index	../fristsite/urls.py	/^from fristapp.views import first_try, index$/;"	kind:namespace	line:18
+initial	../fristapp/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
 job	../fristapp/models.py	/^    job = models.CharField(blank=True, null=True, max_length=200)$/;"	kind:variable	line:8
 manage.py	../manage.py	1;"	kind:file	line:1
+migrations	../fristapp/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../fristapp/migrations/0002_aritcle.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../fristapp/migrations/0003_aritcle_tag.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+model_name	../fristapp/migrations/0003_aritcle_tag.py	/^            model_name='aritcle',$/;"	kind:variable	line:16
+models	../fristapp/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../fristapp/migrations/0002_aritcle.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../fristapp/migrations/0003_aritcle_tag.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../fristapp/models.py	/^from django.db import models$/;"	kind:namespace	line:1
 models.py	../fristapp/models.py	1;"	kind:file	line:1
 name	../fristapp/apps.py	/^    name = 'fristapp'$/;"	kind:variable	line:5
+name	../fristapp/migrations/0001_initial.py	/^            name='People',$/;"	kind:variable	line:17
+name	../fristapp/migrations/0002_aritcle.py	/^            name='Aritcle',$/;"	kind:variable	line:16
+name	../fristapp/migrations/0003_aritcle_tag.py	/^            name='tag',$/;"	kind:variable	line:17
 name	../fristapp/models.py	/^    name = models.CharField(blank=True, null=True, max_length=200)$/;"	kind:variable	line:7
+operations	../fristapp/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../fristapp/migrations/0002_aritcle.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../fristapp/migrations/0003_aritcle_tag.py	/^    operations = [$/;"	kind:variable	line:14
 os	../fristsite/settings.py	/^import os$/;"	kind:namespace	line:13
 os	../fristsite/wsgi.py	/^import os$/;"	kind:namespace	line:10
 os	../manage.py	/^import os$/;"	kind:namespace	line:2
 render	../fristapp/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
 settings.py	../fristsite/settings.py	1;"	kind:file	line:1
 sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
+t	../fristapp/views.py	/^    t = Template(html_string)$/;"	kind:variable	line:31
+tag	../fristapp/models.py	/^    tag = models.CharField(blank=True, null=True,$/;"	kind:variable	line:21
 tests.py	../fristapp/tests.py	1;"	kind:file	line:1
+unicode_literals	../fristapp/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../fristapp/migrations/0002_aritcle.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../fristapp/migrations/0003_aritcle_tag.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 url	../fristsite/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:16
 urlpatterns	../fristsite/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
 urls.py	../fristsite/urls.py	1;"	kind:file	line:1
 views.py	../fristapp/views.py	1;"	kind:file	line:1
+web_page	../fristapp/views.py	/^    web_page = t.render(c)$/;"	kind:variable	line:33
 wsgi.py	../fristsite/wsgi.py	1;"	kind:file	line:1
