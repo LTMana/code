@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/semantic.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/myinfo.css" media="screen" title="no title">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="ui inverted top fixed menu borderless red menu">
+            <div class="header item">
+                <div class="ui image">
+                    <img src="images/tenlogo.png" alt="">
+                </div>
+            </div>
+
+            <div class="right menu">
+                <div class="item">
+                    <h5 class="ui inverted header">
+                            <div class="ui mini circular image">
+                                <img src="images/hou30.jpg" alt="">
+                            </div>
+
+                            <span>admin</span>
+
+                        </h5>
+                </div>
+                <div class="item">
+
+                    <a href="#logout/" class="ui inverted circular button">Logout</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="ui  raised container segments">
+            <div class="ui head basic segment" style="background-image: url('images/bg.png');">
+                <div class="ui circular image cover">
+                    <img src="images/hou180.jpg" alt="" />
+                </div>
+
+
+
+            </div>
+            <div class="ui bottom inverted  six item attached menu">
+
+                <div class="active item">
+                    个人资料
+                </div>
+                <div class="item">
+                    我赞过的
+                </div>
+            </div>
+
+            <div class="ui butt segment">
+                <div class="ui basic very padded segment container info">
+                    <form class="ui form"  action="index.html" method="post">
+                        <div class="field">
+                            <label>姓名</label>
+                            <input type="text" name="name" placeholder="你的真实姓名">
+                        </div>
+                        <div class="field">
+                            <select>
+                                <option value="">性别</option>
+                                <option value="1">男</option>
+                                <option value="0">女</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>密码</label>
+                            <input type="text" name="key" placeholder="********">
+                        </div>
+                        <div class="field">
+                            <label>修改头像</label>
+                            <input type="file"  name="name" value="">
+                        </div>
+
+                        <button class="ui inverted red right floated button" type="submit">修改资料</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
