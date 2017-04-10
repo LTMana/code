@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,26 +12,30 @@
         <div class="ui inverted top fixed menu borderless red menu">
             <div class="header item">
                 <div class="ui image">
-                    <img src="images/tenlogo.png" alt="">
+                    <img src="{% static 'images/tenlogo.png' %}" alt="">
                 </div>
             </div>
 
             <div class="right menu">
+                {% if request.user.is_authenticated %}
                 <div class="item">
                     <h5 class="ui inverted header">
-                            <div class="ui mini circular image">
-                                <img src="images/hou30.jpg" alt="">
-                            </div>
-
-                            <span>admin</span>
-
-                        </h5>
+                        <div class="ui mini circular image">
+                            <img src="{% static 'images/default.png' %}" alt="" />
+                        </div>
+                        <span>{{ request.user.username }}</span>
+                    </h5>
                 </div>
                 <div class="item">
-
-                    <a href="#logout/" class="ui inverted circular button">Logout</a>
-
+                    <a href="{% url 'myinfo' %}" class="ui inverted circular button">Logout</a>
                 </div>
+
+            {% else %}
+
+                <div class="item">
+                    <a href="{% url 'login' %}" class="ui inverted circular button">Signup/Login</a>
+                </div>
+            {% endif %}
             </div>
         </div>
         <div class="ui  raised container segments">

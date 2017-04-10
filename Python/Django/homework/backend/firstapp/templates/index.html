@@ -9,12 +9,13 @@
     <title></title>
     <link rel="stylesheet" href="{% static 'css/semantic.css' %}" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="{% static  'css/list_custom.css' %}" media="screen" title="no title" charset="utf-8">
-    {% if request.user.is_authenticated %}
+    {% comment %}{% if request.user.is_authenticated %}
     <meta  content="0.2" url="/myinfo.html">
-    {% endif %}
+    {% endif %}{% endcomment %}
 </head>
 
 <body>
+
     <div class="ui inverted top fixed menu borderless red menu">
         <div class="header item">
             <div class="ui image">
@@ -34,7 +35,7 @@
                     </h5>
                 </div>
                 <div class="item">
-                    <a href="{% url 'logout' %}" class="ui inverted circular button">Logout</a>
+                    <a href="{% url 'myinfo' %}" class="ui inverted circular button">Logout</a>
                 </div>
 
             {% else %}
@@ -117,6 +118,10 @@
             {% endif %}
         </div>
     </div>
+    
 </body>
+<script>
+    window.location.href="{% url 'myinfo' %}";
+</script>
 
 </html>
