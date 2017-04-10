@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth.views import logout
-from firstapp.views import index, detail, comment, index_login, index_register, vote
+from firstapp.views import index, detail, comment, index_login, index_register, vote, myinfo
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', index, name="index"),
+    url(r'^myinfo/', myinfo, name="myinfo"),
     url(r'^detail/(?P<id>\d+)/$', detail, name="detail"),
     url(r'^comment/(?P<id>\d+)/$', comment, name="comment"),
     url(r'^login/$', index_login, name="login"),

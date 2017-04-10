@@ -9,7 +9,9 @@
     <title></title>
     <link rel="stylesheet" href="{% static 'css/semantic.css' %}" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="{% static  'css/list_custom.css' %}" media="screen" title="no title" charset="utf-8">
-
+    {% if request.user.is_authenticated %}
+    <meta  content="0.2" url="/myinfo.html">
+    {% endif %}
 </head>
 
 <body>

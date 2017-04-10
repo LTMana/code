@@ -26,11 +26,12 @@ def index(request):
         article_list = page_robot.page(page_robot.num_pages)
     except PageNotAnInteger:
         article_list = page_robot.page(1)
-        
+
     context = {}
     context["article_list"] = article_list
 
     return render(request, 'index.html', context)
+
 
 def detail(request, id):
     article = Article.objects.get(id=id)
@@ -41,8 +42,9 @@ def detail(request, id):
     context = {}
     context["article"] = article
     context['form'] = form
-    
+
     return render(request, 'detail.html', context)
+
 
 def comment(request, id):
     if request.method == "POST":
@@ -55,6 +57,7 @@ def comment(request, id):
             c.save()
             return redirect(to="detail", id=id)
     return redirect(to="detail", id=id)
+
 
 def index_login(request):
     if request.method == "GET":
@@ -71,6 +74,7 @@ def index_login(request):
 
     return render(request, 'login.html', context)
 
+
 def index_register(request):
     if request.method == "GET":
         form = UserCreationForm
@@ -86,6 +90,7 @@ def index_register(request):
 
     return render(request, 'register.html', context)
 
+
 def vote(request, id):
     # 未登录用户不允许投票，自动跳回详情页
     if not isinstance(request.user, User):
@@ -95,11 +100,13 @@ def vote(request, id):
 
     try:
         # 如果找不到登陆用户对此篇文章的操作，就报错
-        user_ticket_for_this_article = Ticket.objects.get(voter_id=voter_id, article_id=id)
+        user_ticket_for_this_article = Ticket.objects.get(
+            voter_id=voter_id, article_id=id)
         user_ticket_for_this_article.choice = request.POST["vote"]
         user_ticket_for_this_article.save()
     except ObjectDoesNotExist:
-        new_ticket = Ticket(voter_id=voter_id, article_id=id, choice=request.POST["vote"])
+        new_ticket = Ticket(voter_id=voter_id, article_id=id,
+                            choice=request.POST["vote"])
         new_ticket.save()
 
     # 如果是点赞，更新点赞总数
@@ -109,3 +116,8 @@ def vote(request, id):
         article.save()
 
     return redirect(to="detail", id=id)
+
+
+def myinfo(request):
+    context = {}
+    return render(request, 'myinfo.html', context)

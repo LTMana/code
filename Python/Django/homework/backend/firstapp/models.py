@@ -3,6 +3,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+
+
 class Article(models.Model):
     title = models.CharField(max_length=500)
     img = models.CharField(null=True, blank=True, max_length=250)
@@ -10,20 +12,29 @@ class Article(models.Model):
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
     createtime = models.DateField()
-    
+
     def __str__(self):
         return self.title
 
+
+class UserProfile(models.Model):
+    belong_to = models.OneToOneField(to=User, related_name='profile')
+    profile_image = models.FileField(upload_to='profile_image')
+
+
 class Comment(models.Model):
     name = models.CharField(max_length=500)
-    avatar = models.CharField(max_length=250, default="static/images/default.png")
+    avatar = models.CharField(
+        max_length=250, default="static/images/default.png")
     comment = models.TextField(null=True, blank=True)
     createtime = models.DateField(auto_now=True)
 
-    belong_to = models.ForeignKey(to=Article, related_name="under_comments", null=True, blank=True)
-    
+    belong_to = models.ForeignKey(
+        to=Article, related_name="under_comments", null=True, blank=True)
+
     def __str__(self):
         return self.name
+
 
 class Ticket(models.Model):
     voter = models.ForeignKey(to=User, related_name="user_tickets")
