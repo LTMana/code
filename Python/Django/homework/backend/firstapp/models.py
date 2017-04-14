@@ -18,8 +18,20 @@ class Article(models.Model):
 
 
 class UserProfile(models.Model):
-    belong_to = models.OneToOneField(to=User, related_name='profile')
-    profile_image = models.FileField(upload_to='profile_image')
+
+    # 用户姓名
+    user = models.ForeignKey(User, related_name="profile")
+    # 用户头像
+    # photo = models.ImageField(
+    #     upload_to='profile_image', blank=True, null=True)  # 用户性别
+    # GENDER_CHOICES = (
+    #     (u'M', u'Male'),
+    #     (u'F', u'Female'),
+    # )
+    # gender = models.CharField(max_length=2, choices=GENDER_CHOICES)
+
+    def __str__(self):
+        return self.user
 
 
 class Comment(models.Model):

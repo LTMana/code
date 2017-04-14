@@ -59,13 +59,14 @@
 
             <div class="ui butt segment">
                 <div class="ui basic very padded segment container info">
-                    <form class="ui form"  action="index.html" method="post">
+                    <form class="ui form"  action="{% url 'myinfo' %}" method="post">
+                        {% csrf_token %}
                         <div class="field">
                             <label>姓名</label>
                             <input type="text" name="name" placeholder="你的真实姓名">
                         </div>
                         <div class="field">
-                            <select>
+                            <select name="sex">
                                 <option value="">性别</option>
                                 <option value="1">男</option>
                                 <option value="0">女</option>

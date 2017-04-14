@@ -119,5 +119,15 @@ def vote(request, id):
 
 
 def myinfo(request):
+
+    # if request.method == 'POST' and form.is_valid():
+    #     info = UserProfile.objects.create(
+    #         gender=form.cleaned_data['gender'],
+    #         photo=form.cleaned_data['photo'],
+    #         user=request.user,
+    #     )
+
     context = {}
+    # context['form'] = form
+
     return render(request, 'myinfo.html', context)
