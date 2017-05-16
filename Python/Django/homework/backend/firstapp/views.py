@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from firstapp.models import Article, Comment, Ticket
+from firstapp.models import Article, Comment, Ticket, UserProfile
 from firstapp.forms import CommentForm
 
 from django.core.paginator import Paginator
@@ -120,14 +120,14 @@ def vote(request, id):
 
 def myinfo(request):
 
-    # if request.method == 'POST' and form.is_valid():
-    #     info = UserProfile.objects.create(
-    #         gender=form.cleaned_data['gender'],
-    #         photo=form.cleaned_data['photo'],
-    #         user=request.user,
-    #     )
+    if request.method == 'POST':
+        form = UserProfile.objects.create(
+            gender=form.cleaned_data['gender'],
+            photo=form.cleaned_data['photo'],
+            user=request.user,
+        )
 
     context = {}
-    # context['form'] = form
+    context['form'] = form
 
     return render(request, 'myinfo.html', context)
