@@ -1,0 +1,120 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    padding: 0;
+    margin:0;
+}
+
+a{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background: url("../images/apple.jpg");
+    /*尺寸*/
+    background-size: cover;
+}
+
+
+/*头部*/
+#header{
+   background-color: rgba(241,241,241,0.8);
+   height: 38px;
+   line-height: 38px;
+   width: 100%;
+
+    /*定位*/
+   position: fixed;
+   top: 0;
+
+   font-size: 18px;
+}
+
+.header-left li{
+    float: left;
+    /*设置左边距*/
+    margin-left: 8px;
+}
+
+.header-right{
+    float: right;
+}
+
+.header-right li{
+    /*设置右边距*/
+    margin-right: 8px;
+}
+
+#content{
+   padding-top: 100px;
+   color: white;
+   /*text-align: center;*/
+}
+
+#content .file{
+    margin-left: 50px;
+    /*text-align: center;*/
+}
+
+#content img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/*尾部*/
+#footer{
+    /*background-color: red;*/
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+}
+
+.dock{
+    height: 100%;
+    width: 60%;
+    background: url("../images/dock_bg.png");
+
+    /*居中*/
+    margin:0 auto;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    text-align: center;
+}
+
+#footer .dock img{
+    width: 50px;
+    height: 50px;
+    margin:0 5px;
+}
+
+#footer .dock ul{
+    display: inline-block;
+}
+
+#footer .dock li{
+    float: left;
+
+    /*动画的过度效果*/
+    -webkit-transition: linear 0.25s;
+    -moz-transition: linear 0.25s;
+    -ms-transition: linear 0.25s;
+    -o-transition: linear 0.25s;
+    transition: linear 0.25s;
+}
+
+
+#footer .dock li:hover{
+   /*动画方向*/
+    -webkit-transform-origin: center bottom;
+    /*设置动画的效果*/
+    -webkit-transform: scale(1.5);
+}
