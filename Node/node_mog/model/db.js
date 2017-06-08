@@ -1,7 +1,8 @@
 const MongoClient = require('mongodb').MongoClient
+const settings = require("../settings.js")
 
 function _connectDB(callback) {
-    const url = 'mongodb://localhost:27017/itcast'
+    const url = settings.dburl
     MongoClient.connect(url, (err, db) => {
         callback(err, db)
     })
@@ -16,59 +17,6 @@ exports.insertOne = (collectionName, json, callback) => {
         })
     })
 }
-
-// exports.find = (collectionName, json = {}, args = {}, callback) => {
-
-//     let call; //回调函数
-//     if (typeof json == 'function') {
-//         call = json
-//         var skipnumber = 0;
-//         var limit = 0;
-//         var sort = {};
-//         var findJson = {}
-//     } else if (typeof args == 'function') {
-
-//         var findJson = json
-//         call = args
-//         var skipnumber =  0;
-//         var limit =  0;
-//         var sort =  {};
-
-//     } else {
-//         var findJson = json
-//         var skipnumber = args.pageamount * args.page || 0;
-//         var limit = args.pageamount || 0;
-//         var sort = args.sort || {};
-//         call = callback
-//     }
-
-//     let result = [];
-//     _connectDB((err, db) => {
-
-//         let cursor = db.collection(collectionName).find(findJson).skip(skipnumber).limit(limit).sort(sort)
-//         cursor.each((err, doc) => {
-//             if (err) {
-//                 call(err, null)
-//                 db.close()
-//                 return
-//             }
-//             if (doc != null) {
-//                 result.push(doc)
-//             } else {
-
-//                 call(null, result)
-//                 db.close();
-//             }
-
-//         })
-
-//     })
-
-
-
-// }
-
-
 exports.find = (collectionName = null, callback, json = {}, args = {}) => {
 
     if (collectionName == null) {
@@ -98,5 +46,39 @@ exports.find = (collectionName = null, callback, json = {}, args = {}) => {
         })
 
     })
+
+}
+
+exports.deleteMany = (collectionName, json, callback) => {
+
+    _connectDB((err, db) => {
+        db.collection(collectionName).deleteMany(json, (err, results) => {
+            callback(err, results)
+            db.close()
+        })
+    })
+
+}
+
+
+exports.updateMany = (collectionName, json1, json2, callback) => {
+
+     db.collection(collectionName).updateMany(json1,json2,(err,results)=>{
+
+         callback(err,results)
+         db.close()
+
+     })
+
+}
+
+exports.getAllCount = (collectionName,callback)=>{
+     
+     _connectDB((err,db)=>{      
+        db.collection(collectionName).count({}).then(count =>{
+          callback(count)
+          db.close()
+        })
+     })
 
 }
