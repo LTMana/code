@@ -12,6 +12,9 @@ function _connectDB(callback) {
 exports.insertOne = (collectionName, json, callback) => {
     _connectDB((err, db) => {
         db.collection(collectionName).insertOne(json, (err, result) => {
+            if(err){
+                console.log('错误',err)
+            }
             callback(err, result)
             db.close()
         })
